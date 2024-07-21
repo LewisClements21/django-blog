@@ -27,9 +27,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-a+feuz3py6tn!+16#o+l91wucift(0fahg25v0(gbk7!&@muqh'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ["8000-lewisclement-djangoblog-plfpwmw8qog.ws.codeinstitute-ide.net", ".herokuapp.com"]
+ALLOWED_HOSTS = ["https://8000-lewisclement-djangoblog-plfpwmw8qog.ws.codeinstitute-ide.net","8000-lewisclement-djangoblog-plfpwmw8qog.ws.codeinstitute-ide.net", ".herokuapp.com"]
 
 
 # Application definition
@@ -91,6 +91,7 @@ DATABASES = {
 
 CSRF_TRUSTED_ORIGINS = [
     "https://lewisclement-djangoblog-plfpwmw8qog.ws.codeinstitute-ide.net/",
+    "https://8000-lewisclement-djangoblog-plfpwmw8qog.ws.codeinstitute-ide.net",
     "https://d10119715-212157-139aceb99f97.herokuapp.com/"
 ]
 
