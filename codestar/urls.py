@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
+    path("about/", include("about.urls"), name="about-urls"),
     path("accounts/", include("allauth.urls")),
     path('https://8000-lewisclement-djangoblog-plfpwmw8qog.ws.codeinstitute-ide.net/admin/', admin.site.urls),
     path('summernote/', include('django_summernote.urls')),
